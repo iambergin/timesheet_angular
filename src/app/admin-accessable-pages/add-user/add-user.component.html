@@ -1,0 +1,18 @@
+<h2>Add User</h2>
+<form class="row g-3" [formGroup]="fg">
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" formControlName="email" id="email">
+    </div>
+    <div class="col-md-6">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+    <div class="col-md-6">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" formControlName="fullName">
+      </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" (click)="addUser()">Add Timesheet</button>
+    </div>
+  </form>

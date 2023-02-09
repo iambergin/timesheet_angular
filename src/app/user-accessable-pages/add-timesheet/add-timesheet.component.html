@@ -1,0 +1,27 @@
+<h2>Timesheet</h2>
+<form class="row g-3" [formGroup]="fg">
+    <div class="col-md-6">
+      <label for="Project" class="form-label">Project</label>
+      <select id="Project" class="form-select" formControlName="project">
+        <option value="" selected>...</option>
+        <option value="Test Project 1">Test Project 1</option>
+        <option value="Test Project 2">Test Project 2</option>
+        <option value="Test Project 3">Test Project 3</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="task" class="form-label">Task</label>
+      <input type="text" class="form-control" formControlName="title" id="task">
+    </div>
+    <div class="col-md-6">
+      <label for="hrs" class="form-label">Date</label>
+      <input type="date" class="form-control" id="hrs" formControlName="date">
+    </div>
+    <div class="col-md-6">
+        <label for="hrs" class="form-label">No of Hrs</label>
+        <input type="number" class="form-control" id="hrs" formControlName="hrs">
+      </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" (click)="updateTimesheet()">Add Timesheet</button>
+    </div>
+  </form>
